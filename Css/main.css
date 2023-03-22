@@ -9,23 +9,23 @@ html {
     width: 100px;
 }
 
-
-
 body {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url("../img/0054.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-blend-mode:color-dodge;
-    width:100%;
-    height:auto;
+    background-attachment: fixed;
+    background-blend-mode: color-dodge;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     height: 100%;
+    opacity: 1;
+    animation: Anim 1.5s normal linear;
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     align-items: center;
@@ -38,16 +38,16 @@ header{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    width:100%;
+    width: 100%;
 }
 
 .list-unit a {
     text-decoration: none;
     color: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 nav {
@@ -62,9 +62,9 @@ nav {
     margin-left: 0px;
 }
 
-.list-unit a:hover{
+.list-unit a:hover {
     color: blue;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 main {
@@ -88,13 +88,14 @@ main button {
     height: 50px;
     border-radius: 30px;
     background-color: rgb(255, 46, 46);
-    transition:all 0.4s ease-in;
+    transition: all 0.4s ease-in;
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
 }
 
-aside, h1{
+aside,
+h1 {
     padding: 10px;
 }
 
@@ -109,48 +110,71 @@ aside, h1{
 
 @media screen and (max-width:1200px) {
     .menu-list {
-     justify-content: space-between;
+        justify-content: space-between;
     }
+
     .list-unit {
-     margin-left: 5%;
-    } 
- }
+        margin-left: 5%;
+    }
+}
 
 @media screen and (max-width:940px) {
-   .menu-list {
-    justify-content: flex-start;
-   }
-   .list-unit {
-    margin-left: 5%;
-   } 
+    .menu-list {
+        justify-content: flex-start;
+    }
+
+    .list-unit {
+        margin-left: 5%;
+    }
 }
+
 @media screen and (max-width:700px) {
     .menu-list {
-     justify-content: flex-start;
-     
+        justify-content: flex-start;
+
     }
+
     .list-unit {
-     margin-left: 0%;
+        margin-left: 0%;
     }
- }
+}
 
-
- @media screen and (max-width:570px) {
-    .menu-list{
+@media screen and (max-width:570px) {
+    .menu-list {
         padding-left: 0px;
-        
+
     }
+
     .list-unit a {
         font-size: 16px;
     }
+
     .logo {
-        width:70px;
+        width: 70px;
         height: 70px
     }
+
     header {
         height: 70px;
     }
+
     nav {
         height: 70px;
     }
- }
+}
+
+
+@keyframes Anim {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
