@@ -114,7 +114,7 @@ h1 {
     align-items: center;
     border-radius: 10px;
     transform-origin: 0 0;
-    transform:translate(-105%);
+    transform:translate(-110%);
     font-weight: 600;
 }
 
@@ -196,7 +196,7 @@ h1 {
 @keyframes Notification {
     0%{
         
-        transform: translateX(-105%);
+        transform: translateX(-110%);
     }
     20%{
         transform: translateX(0%);
@@ -211,7 +211,7 @@ h1 {
         transform: translateX(0%);
     }
     100%{
-        transform: translateX(-105%);
+        transform: translateX(-110%);
     }
 
 }
