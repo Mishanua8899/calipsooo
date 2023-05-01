@@ -87,7 +87,7 @@ main button {
     height: 50px;
     border-radius: 30px;
     background-color: rgb(255, 46, 46);
-    transition: all 0.4s ease-in;
+    transition: all 0.3s ease;
     color: white;
     font-size: 20px;
 }
